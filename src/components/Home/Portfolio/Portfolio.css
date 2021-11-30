@@ -1,0 +1,28 @@
+.card{
+    background-color: rgb(87, 86, 90);
+    border-radius: 10px;
+}
+.card-title{
+    color: aqua;
+    font-weight: 700;
+    font-size: 25px;
+}
+.card img{
+    padding: 10px;
+    border-radius: 20px;
+}
+.card img:hover{
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+.card:hover{
+    transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(107, 102, 102, 0.5);
+  transition: 0.5s;
+}
+.card-icon{
+    color: lightgray;
+}
+.card-icon:hover{
+    color: aqua;
+}

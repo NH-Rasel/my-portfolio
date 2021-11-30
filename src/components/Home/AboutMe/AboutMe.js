@@ -18,7 +18,7 @@ const AboutMe = () => {
                 </div>
                 <div className="col-sm-12 col-lg-5 d-flex align-items-center">
                     <img className=" ms-lg-4" style={{ width: '320px', marginTop: '-40px' }} src={image} alt="" />
-                    <div>
+                    <div className="d-flex flex-column align-items-center">
                         <p style={{ transform: 'rotate(90deg)', marginTop: '41px', border: '1px solid aqua', borderRadius: '8px', padding: '8px', color: 'aqua' }}>ABOUT ME</p>
                         <hr style={{ transform: 'rotate(90deg)', width: '100px', marginTop: '80px' }} />
                     </div>

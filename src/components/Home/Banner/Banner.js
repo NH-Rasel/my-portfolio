@@ -1,6 +1,8 @@
 import React from 'react';
+import { Nav } from 'react-bootstrap';
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './Banner.css';
 
 const Banner = () => {
@@ -46,11 +48,11 @@ const Banner = () => {
                         </div>
                     </h5>
                     <br />
-                    <div>
+                    <div className="d-flex align-items-center">
                         <a href="https://doc-10-3c-docs.googleusercontent.com/docs/securesc/fgktbrosslhkhi8bgcj83e6s6mklt5gr/vfd2bqaet553m6kl9lvu98lpmmclqr99/1638206175000/17362211290581971110/17362211290581971110/1kIHSASOizTkRPgKCYw6gZcicpYZjtKGj?e=download&authuser=0&nonce=t521f5dsvls06&user=17362211290581971110&hash=bio1kuhpe1b1rtc5firvtvsu3mholt0g">
                             <button style={{ backgroundColor: 'aqua', color: 'rgb(7, 4, 32)' }} type="button" className="btn btn-lg p-3 ms-4">Get Resume</button>
                         </a>
-                        <Link style={{ textDecoration: 'none' }} to="/"><button style={{ border: '1px solid aqua', color: 'aqua' }} type="button" className="btn btn-lg p-3 ms-4">My Skills</button></Link>
+                        <Nav.Link as={HashLink} to="/home#skill" style={{ textDecoration: 'none', color: 'aqua' }}><button style={{ border: '1px solid aqua', color: 'aqua' }} type="button" className="btn btn-lg p-3">My Skills</button></Nav.Link>
                     </div>
                 </div>
             </div>

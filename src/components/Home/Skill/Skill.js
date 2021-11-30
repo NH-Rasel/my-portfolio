@@ -12,7 +12,7 @@ const Skill = () => {
                 <div className="col-10">
                     <div className="row row-cols-1 row-cols-md-4 g-3">
                         <div className="col">
-                            <div className="card">
+                            <div className="skill-card">
                                 <div className="box">
                                     <div className="percent">
                                         <svg className="skill-svg">
@@ -28,7 +28,7 @@ const Skill = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
+                            <div className="skill-card">
                                 <div className="box">
                                     <div className="percent">
                                         <svg className="skill-svg">
@@ -44,7 +44,7 @@ const Skill = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
+                            <div className="skill-card">
                                 <div className="box">
                                     <div className="percent">
                                         <svg className="skill-svg">
@@ -60,7 +60,7 @@ const Skill = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
+                            <div className="skill-card">
                                 <div className="box">
                                     <div className="percent">
                                         <svg className="skill-svg">
@@ -76,7 +76,7 @@ const Skill = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
+                            <div className="skill-card">
                                 <div className="box">
                                     <div className="percent">
                                         <svg className="skill-svg">
@@ -92,7 +92,7 @@ const Skill = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
+                            <div className="skill-card">
                                 <div className="box">
                                     <div className="percent">
                                         <svg className="skill-svg">
@@ -108,7 +108,7 @@ const Skill = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card">
+                            <div className="skill-card">
                                 <div className="box">
                                     <div className="percent">
                                         <svg className="skill-svg">
