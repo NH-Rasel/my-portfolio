@@ -1,0 +1,132 @@
+.banner-text{
+    width: 100%; 
+}
+.box {
+    position: relative;
+}
+.title {
+    width: 100%;
+    position: relative;
+    height: 80px;
+}
+.block {
+    width: 0%;
+    height: inherit;
+    background: aqua;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  }
+  h1 {
+    font-family: 'Poppins';
+    color: #fff;
+    -webkit-animation: mainFadeIn 2s forwards;
+    -o-animation: mainFadeIn 2s forwards;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    position: relative;
+  }
+  
+  .role {
+    width: 100%;
+    position: relative;
+    height: 60px;
+  }
+  
+  h4 {
+      -webkit-animation: secFadeIn 2s forwards;
+      -o-animation: secFadeIn 2s forwards;
+    animation: secFadeIn 2s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    color: aqua;
+  }
+
+  @keyframes mainBlock {
+    0% {
+      width: 0%;
+      left: 0;
+  
+    }
+    50% {
+      width: 100%;
+      left: 0;
+  
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+  
+  @keyframes secBlock {
+    0% {
+      width: 0%;
+      left: 0;
+  
+    }
+    50% {
+      width: 100%;
+      left: 0;
+  
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+  
+  @keyframes mainFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes secFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.wordCarousel{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    display: flex;
+    height: 25px;
+    margin-top: -15px; 
+    -webkit-animation: secFadeIn 2s forwards;
+      -o-animation: secFadeIn 2s forwards;
+    animation: secFadeIn 2s forwards;
+    animation-delay: 2.8s;
+    opacity: 0;
+}
+.tech{
+    color: aqua;
+    height: 45px;
+    margin-left: -20px;
+    margin-bottom: 45px;
+    display: block; 
+}
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}

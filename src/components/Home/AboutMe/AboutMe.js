@@ -5,7 +5,7 @@ import image from '../../../my-image.png';
 const AboutMe = () => {
     return (
         <div id="aboutMe" className="container" >
-            <div class="d-flex align-items-center row ms-1" style={{ marginTop: '180px' }}>
+            <div class="d-flex align-items-center row ms-1" style={{ marginTop: '160px' }}>
                 <div class="col-sm-12 col-lg-7 mb-3">
                     <h5 style={{ lineHeight: 1.7 }}
                         className="text-start">Hello! I'm Nur Hossain Rasel, a passionate web developer. I develop web applications, mobile applications, and desktop applications. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I love to make the web more open to the world. Currently I am graduating with a bachelor's degree in Electrical & Electronic Engg. from Chittagong Institute of Engg. & Tech. at Chittagong, Bangladesh.  I am available for any kind of job opportunity that suits my interests.</h5>
