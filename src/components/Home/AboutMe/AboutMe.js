@@ -10,7 +10,7 @@ const AboutMe = () => {
                     <h5 style={{ lineHeight: 1.7 }}
                         className="text-start">Hello! I'm Nur Hossain Rasel, a passionate web developer. I develop web applications. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I love to make the web more open to the world. Currently I am graduating with a bachelor's degree in Electrical & Electronic Engg. from Chittagong Institute of Engg. & Tech. at Chittagong, Bangladesh.  I am available for any kind of job opportunity that suits my interests.</h5>
                     <div style={{ marginLeft: '-22px' }} className="d-flex justify-content start mt-3">
-                        <a href="https://doc-10-3c-docs.googleusercontent.com/docs/securesc/fgktbrosslhkhi8bgcj83e6s6mklt5gr/vfd2bqaet553m6kl9lvu98lpmmclqr99/1638206175000/17362211290581971110/17362211290581971110/1kIHSASOizTkRPgKCYw6gZcicpYZjtKGj?e=download&authuser=0&nonce=t521f5dsvls06&user=17362211290581971110&hash=bio1kuhpe1b1rtc5firvtvsu3mholt0g">
+                        <a href="https://drive.google.com/uc?export=download&id=1kIHSASOizTkRPgKCYw6gZcicpYZjtKGj">
                             <button style={{ backgroundColor: 'aqua', color: 'rgb(7, 4, 32)' }} type="button" className="btn btn-lg p-3 mt-3 ms-4">Get Resume</button>
                         </a>
                         <Link style={{ textDecoration: 'none' }} to="/"><button style={{ border: '1px solid aqua', color: 'aqua' }} type="button" className="btn btn-lg p-3 mt-3 ms-3">Contact Me</button></Link>

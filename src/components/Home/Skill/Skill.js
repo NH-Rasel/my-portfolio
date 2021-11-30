@@ -36,7 +36,7 @@ const Skill = () => {
                                             <circle cx="70" cy="70" r="70"></circle>
                                         </svg>
                                         <div className="num">
-                                            <h2>70<span>%</span></h2>
+                                            <h2>80<span>%</span></h2>
                                         </div>
                                     </div>
                                     <h2 className="text">CSS</h2>
@@ -52,7 +52,23 @@ const Skill = () => {
                                             <circle cx="70" cy="70" r="70"></circle>
                                         </svg>
                                         <div className="num">
-                                            <h2>65<span>%</span></h2>
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                    </div>
+                                    <h2 className="text">Bootstrap</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="skill-card">
+                                <div className="box">
+                                    <div className="percent">
+                                        <svg className="skill-svg">
+                                            <circle cx="70" cy="70" r="70"></circle>
+                                            <circle cx="70" cy="70" r="70"></circle>
+                                        </svg>
+                                        <div className="num">
+                                            <h2>70<span>%</span></h2>
                                         </div>
                                     </div>
                                     <h2 className="text">Javascript</h2>
@@ -68,7 +84,7 @@ const Skill = () => {
                                             <circle cx="70" cy="70" r="70"></circle>
                                         </svg>
                                         <div className="num">
-                                            <h2>60<span>%</span></h2>
+                                            <h2>70<span>%</span></h2>
                                         </div>
                                     </div>
                                     <h2 className="text">React</h2>
@@ -84,7 +100,7 @@ const Skill = () => {
                                             <circle cx="70" cy="70" r="70"></circle>
                                         </svg>
                                         <div className="num">
-                                            <h2>60<span>%</span></h2>
+                                            <h2>65<span>%</span></h2>
                                         </div>
                                     </div>
                                     <h2 className="text">Node JS</h2>

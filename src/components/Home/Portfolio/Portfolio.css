@@ -22,6 +22,7 @@
 }
 .card-icon{
     color: lightgray;
+    font-size: 25px;
 }
 .card-icon:hover{
     color: aqua;

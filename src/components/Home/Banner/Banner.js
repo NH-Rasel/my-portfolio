@@ -49,7 +49,7 @@ const Banner = () => {
                     </h5>
                     <br />
                     <div className="d-flex align-items-center">
-                        <a href="https://doc-10-3c-docs.googleusercontent.com/docs/securesc/fgktbrosslhkhi8bgcj83e6s6mklt5gr/vfd2bqaet553m6kl9lvu98lpmmclqr99/1638206175000/17362211290581971110/17362211290581971110/1kIHSASOizTkRPgKCYw6gZcicpYZjtKGj?e=download&authuser=0&nonce=t521f5dsvls06&user=17362211290581971110&hash=bio1kuhpe1b1rtc5firvtvsu3mholt0g">
+                        <a href="https://drive.google.com/uc?export=download&id=1kIHSASOizTkRPgKCYw6gZcicpYZjtKGj">
                             <button style={{ backgroundColor: 'aqua', color: 'rgb(7, 4, 32)' }} type="button" className="btn btn-lg p-3 ms-4">Get Resume</button>
                         </a>
                         <Nav.Link as={HashLink} to="/home#skill" style={{ textDecoration: 'none', color: 'aqua' }}><button style={{ border: '1px solid aqua', color: 'aqua' }} type="button" className="btn btn-lg p-3">My Skills</button></Nav.Link>

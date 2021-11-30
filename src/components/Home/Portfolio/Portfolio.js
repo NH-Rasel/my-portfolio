@@ -13,7 +13,7 @@ import { HashLink } from 'react-router-hash-link';
 const Portfolio = () => {
     return (
         <div id="portfolio" className="container m-5">
-            <div className="row">
+            <div className="row mx-1 " style={{ marginTop: '150px' }}>
                 <div className="col-10">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col text-start">
@@ -114,6 +114,9 @@ const Portfolio = () => {
                         <hr style={{ transform: 'rotate(90deg)', width: '100px', marginTop: '64px' }} />
                     </div>
                 </div>
+                <a href="https://github.com/NH-Rasel">
+                    <button style={{ backgroundColor: 'aqua', color: 'rgb(7, 4, 32)' }} type="button" className="btn btn-lg p-3 mt-3 ms-4">More</button>
+                </a>
             </div>
         </div>
     );
