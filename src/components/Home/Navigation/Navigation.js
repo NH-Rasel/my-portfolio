@@ -19,7 +19,7 @@ const Navigation = () => {
                             </text>
                         </svg>
                     </div>
-                    <Navbar.Toggle style={{ backgroundColor: 'aqua' }} />
+                    <Navbar.Toggle className="menu-icon" />
                     <Navbar.Collapse style={{ marginTop: '-60px' }} className="justify-content-end">
                         <Nav.Link as={HashLink} to="/home#aboutMe" style={{ textDecoration: 'none', color: 'aqua' }}>About Me</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#skill" style={{ textDecoration: 'none', color: 'aqua' }}>Skill</Nav.Link>

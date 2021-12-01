@@ -1,15 +1,34 @@
 import React from 'react';
 import { BiEnvelopeOpen, BiMap, BiPhoneCall } from "react-icons/bi";
+import { useForm } from "react-hook-form";
 import './Contact.css';
 
+
 const Contact = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = (data, e) => {
+        alert(`Thank you for your message from ${data.email}`);
+        const templateId = 'template_jbe4f3c';
+        const serviceID = 'service_k8y6lsc';
+        sendFeedback(serviceID, templateId, { from_name: data.name, message_html: data.comment, reply_to: data.email })
+        e.target.reset();
+    }
+    const sendFeedback = (serviceID, templateId, variables) => {
+        window.emailjs.send(
+            serviceID, templateId,
+            variables
+        ).then(res => {
+            console.log('Email successfully sent!')
+        })
+            .catch(err => console.error('There has been an error.  Here some thoughts on the error that occur:', err))
+    }
     return (
         <div id="contact" className="container m-5">
             <div className="d-flex align-items-center row mx-1 " style={{ marginTop: '150px' }}>
                 <div className="col-sm-12 col-lg-7 d-flex align-items-center">
                     <div className="d-flex flex-column align-items-center">
                         <hr style={{ transform: 'rotate(90deg)', width: '100px', marginTop: '64px' }} />
-                        <p style={{ transform: 'rotate(90deg)', marginTop: '58px', border: '1px solid aqua', borderRadius: '8px', padding: '8px', color: 'aqua' }}>CONTACT</p>
+                        <p style={{ transform: 'rotate(-90deg)', marginTop: '58px', border: '1px solid aqua', borderRadius: '8px', padding: '8px', color: 'aqua' }}>CONTACT</p>
                     </div>
                     <div>
                         <div className="d-flex align-items-start">
@@ -27,10 +46,37 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="col-sm-12 col-lg-5">
-                    <form>
-                        <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                        <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <input
+                            name="name"
+                            class="feedback-input"
+                            placeholder="Name"
+                            {...register("name", {
+                                required: true
+                            })
+                            }
+                        /><br />
+                        {errors.name?.type === 'required' && errors.name.message}<br />
+                        <input
+                            name="email"
+                            class="feedback-input"
+                            placeholder="Email"
+                            {...register("email", {
+                                required: true
+                            })
+                            }
+                        /><br />
+                        {errors.email?.type === 'required' && errors.email.message}<br />
+                        <textarea
+                            name="text"
+                            class="feedback-input"
+                            placeholder="Message"
+                            {...register("text", {
+                                required: true
+                            })
+                            }
+                        /><br />
+                        {errors.comment?.type === 'required' && "oops, you forgot your message!"}<br />
                         <input type="submit" value="SUBMIT" />
                     </form>
                 </div>
